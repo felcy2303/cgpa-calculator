@@ -1,0 +1,415 @@
+def credit1(grade):
+    a = 0
+    if grade == 'O':
+        a = 10 * 1
+    elif grade == 'A+':
+        a = 9 * 1
+    elif grade == 'A':
+        a = 8 * 1
+    elif grade == 'B+':
+        a = 7 * 1
+    elif grade == 'B':
+        a = 6 * 1
+    elif grade == 'C':
+        a = 5 * 1
+    elif grade=="u":
+        a = 0
+    return a
+
+def credit2(grade):
+    a = 0
+    if grade == 'O':
+        a = 10 * 2
+    elif grade == 'A+':
+        a = 9 * 2
+    elif grade == 'A':
+        a = 8 * 2
+    elif grade == 'B+':
+        a = 7 * 2
+    elif grade == 'B':
+        a = 6 * 2
+    elif grade == 'C':
+        a = 5 * 2
+    elif grade=="u":
+        a = 0
+    return a
+
+def credit3(grade):
+    a = 0
+    if grade == 'O':
+        a = 10 * 3
+    elif grade == 'A+':
+        a = 9 * 3
+    elif grade == 'A':
+        a = 8 * 3
+    elif grade == 'B+':
+        a = 7 * 3
+    elif grade == 'B':
+        a = 6 * 3
+    elif grade == 'C':
+        a = 5 * 3
+    elif grade=="u":
+        a = 0
+    return a
+
+def credit4(grade):
+    a = 0
+    if grade == 'O':
+        a = 10 * 4
+    elif grade == 'A+':
+        a = 9 * 4
+    elif grade == 'A':
+        a = 8 * 4
+    elif grade == 'B+':
+        a = 7 * 4
+    elif grade == 'B':
+        a = 6 * 4
+    elif grade == 'C':
+        a = 5 * 4
+    elif grade=="u":
+        a = 0
+    return a
+
+def calsem1():
+    grade = input("enter communicate english grade: credit 3")
+    a = credit3(grade)
+    grade = input("enter heritage of tamil grade: credit 1")
+    b = credit1(grade)
+    grade = input("enter matrices and calculus grade: credit 4")
+    c = credit4(grade)
+    grade = input("enter engineering physics grade: credit 3")
+    d = credit3(grade)
+    grade = input("enter engineering chemistry grade: credit 3")
+    r = credit3(grade)
+    grade = input("enter python grade: credit 3")
+    e = credit3(grade)
+    grade = input("enter python lab grade : credit 2")
+    f = credit2(grade)
+    grade = input("enter phy/chem lab grade: credit 2")
+    g = credit2(grade)
+    grade = input("enter communicate english lab grade: credit 1")
+    h = credit1(grade)
+    if (a==0):
+        print ("arear in communicate english")
+    if (b==0):
+        print("arear in heritage of tamil")
+    if (c==0):
+        print("arear  in  matrices and calculus ")
+    if (d==0):
+        print("arear in engineering physics")
+    if (e==0):
+        print("arear in engineering chemistry")
+    if (f==0):
+        print("arear in pyhon")
+    if (g==0):
+        print("arear in python lab")
+    if (h==0):
+        print("arear in phy /chem lab")
+    if (r==0):
+        print("arear in communicate english lab")
+        
+    print("gpa of sem 1")
+    cre = 3 + 4 + 3 + 3 + 3 + 1 + 1 + 2 + 2
+    sub = a + b + c + d + e + f + g + h + r
+    gpa1 = sub / cre
+
+    print("gpa1:", gpa1)
+    print("cgpa:", gpa1)
+    return gpa1
+
+def calsem2():
+    grade = input("enter technical english grade: credit 3")
+    a = credit3(grade)
+    grade = input("enter technology of tamil grade: credit 1")
+    b = credit1(grade)
+    grade = input("enter statistics and numerical methods grade: credit 4")
+    c = credit4(grade)
+    grade = input("enter physics grade: credit 3")
+    d = credit3(grade)
+    grade = input("enter ess grade: credit 2")
+    r = credit2(grade)
+    grade = input("enter EG grade: credit 4")
+    e = credit4(grade)
+    grade = input("enter engineering practice lab grade : credit 2")
+    f = credit2(grade)
+    grade = input("enter programming in c lab grade: credit 2")
+    g = credit2(grade)
+    grade = input("enter prog in c grade: credit 3")
+    h = credit3(grade)
+    grade = input("enter technical english lab grade: credit 1")
+    i = credit1(grade)
+    if (a==0):
+        print ("arear in technical english")
+    if (b==0):
+        print("arear in technology of tamil")
+    if (c==0):
+        print("arear  in  statistics and numerical methods")
+    if (d==0):
+        print("arear in physics")
+    if (e==0):
+        print("arear in eg")
+    if (f==0):
+        print("arear in engineering practices lab")
+    if (g==0):
+        print("arear in programming in c lab")
+    if (h==0):
+        print("arear in programming in c")
+    if (r==0):
+        print("arear in ess")
+    if (i==0):
+        print("arear technical english lab")
+    print("gpa of sem 2")
+    cre = 3 + 1 + 4 + 3 + 2 + 4 + 2 + 3 + 2 + 1
+    sub = a + b + c + d + e + f + g + h + r + i
+    gpa2 = sub / cre
+    print(gpa2)
+    s = input("enter cgpa needed y/n")
+    if (s == "y"):
+        a1 = calsem1()
+        print(a1)
+        cgpa = (a1 + gpa2+0.1) / 2
+        print("cgpa is:",cgpa)
+   
+    return gpa2
+
+def calsem3():
+    grade = input("enter DPCO: credit 4")
+    a = credit4(grade)
+    grade = input("enter FDS: credit 3")
+    b = credit3(grade) 
+    grade = input("enter DSA grade: credit 3")
+    c = credit3(grade)
+    grade = input("enter OOPS: credit 3")
+    d = credit3(grade)
+    grade = input("enter OOPS LAB: credit 2")
+    r = credit2(grade)
+    grade = input("enter FDS LAB: credit 2")
+    e = credit2(grade)
+    grade = input("enter DATA STRUCTURE lab grade : credit 2")
+    f = credit2(grade)
+    grade = input("enter QA AND VR: credit 1")
+    g = credit1(grade)
+    grade = input("enter OS: credit 3")
+    h = credit3(grade)
+
+    print("gpa of sem 3")
+    cre = 4 + 3 + 3 + 3 + 2 + 2 + 2 + 1 + 3
+    sub = a + b + c + d + e + f + g + h + r
+    gpa3 = sub / cre
+    print(gpa3)
+    s = input("enter cgpa needed y/n")
+    if (s == "y"):
+        a1 = calsem1()
+        a2 = calsem2()
+       
+        cgpa = (a1 + a2 + gpa3) / 3
+   
+    return gpa3
+
+def calsem4():
+    grade = input("enter DISCRETE MATHS: credit 4")
+    a = credit4(grade)
+    grade = input("enter OS: credit 4")
+    b = credit4(grade)
+    grade = input("enter DESIGN AND ANALYSE OF ALG grade: credit 4")
+    c = credit4(grade)
+    grade = input("enter SOFTWARE ENGINEERING: credit 3")
+    d = credit3(grade)
+    grade = input("enter DATABASE MANAGEMENT SYSTEM: credit 3")
+    r = credit3(grade)
+    grade = input("enter JAVA: credit 3")
+    e = credit3(grade)
+    grade = input("enter JAVA lab grade : credit 2")
+    f = credit2(grade)
+    grade = input("enter DBMS LAB: credit 1")
+    g = credit1(grade)
+    grade = input("enter QA AND BS: credit 3")
+    h = credit3(grade)
+
+    print("gpa of sem 4")
+    cre = 4 + 4 + 4 + 3 + 3 + 3 + 2 + 2 + 1
+    sub = a + b + c + d + e + f + g + h + r
+    gpa4 = sub / cre
+    print(gpa4)
+    s = input("enter cgpa needed y/n")
+    if s == "y":
+        a1 = calsem1()
+        a2 = calsem2()
+        a3 = calsem3()
+        cgpa = (a1 + a2 + a3 + gpa4) / 4
+    else:
+        cgpa = gpa4
+    print("cgpa:", cgpa)
+    return gpa4
+
+def calsem5():
+    grade = input("enter COMPILER DESIGN: credit 4")
+    a = credit4(grade)
+    grade = input("enter COMPUTER NETWORKS: credit 4")
+    b = credit4(grade)
+    grade = input("enter FULL STACK PROG grade: credit 4")
+    c = credit4(grade)
+    grade = input("enter GEOGRAPHIC IS: credit 3")
+    d = credit3(grade)
+    grade = input("enter MICROPROCESS AND MICROCONTROLLER: credit 3")
+    r = credit3(grade)
+    grade = input("enter MP AND MC LAB: credit 2")
+    e = credit2(grade)
+    grade = input("enter FULL STACK PROG lab grade : credit 2")
+    f = credit2(grade)
+    grade = input("enter C AND NS: credit 3")
+    g = credit3(grade)
+
+    print("gpa of sem 5")
+    cre = 4 + 4 + 4 + 3 + 3 + 2 + 2 + 3
+    sub = a + b + c + d + e + f + g + r
+    gpa5 = sub / cre
+    print(gpa5)
+    s = input("enter cgpa needed y/n")
+    if s == "y":
+        a1 = calsem1()
+        a2 = calsem2()
+        a3 = calsem3()
+        a4 = calsem4()
+        cgpa = (a1 + a2 + a3 + a4 + gpa5) / 5
+    else:
+        cgpa = gpa5
+    print("cgpa:", cgpa)
+    return gpa5
+
+def calsem6():
+    grade = input("enter Theory of Computation: credit 4")
+    a = credit4(grade)
+    grade = input("enter Artificial Intelligence: credit 4")
+    b = credit4(grade)
+    grade = input("enter Machine Learning: credit 4")
+    c = credit4(grade)
+    grade = input("enter Embedded System: credit 3")
+    d = credit3(grade)
+    grade = input("enter IoT: credit 3")
+    r = credit3(grade)
+    grade = input("enter Embedded System lab grade : credit 2")
+    e = credit2(grade)
+    grade = input("enter IoT lab grade: credit 2")
+    f = credit2(grade)
+    grade = input("enter Free elective 1: credit 3")
+    g = credit3(grade)
+
+    print("gpa of sem 6")
+    cre = 4 + 4 + 4 + 3 + 3 + 2 + 2 + 3
+    sub = a + b + c + d + e + f + g + r
+    gpa6 = sub / cre
+    print(gpa6)
+    s = input("enter cgpa needed y/n")
+    if s == "y":
+        a1 = calsem1()
+        a2 = calsem2()
+        a3 = calsem3()
+        a4 = calsem4()
+        a5 = calsem5()
+        cgpa = (a1 + a2 + a3 + a4 + a5 + gpa6) / 6
+    else:
+        cgpa = gpa6
+    print("cgpa:", cgpa)
+    return gpa6
+
+def calsem7():
+    grade = input("enter Deep Learning: credit 4")
+    a = credit4(grade)
+    grade = input("enter BlockChain Technology: credit 4")
+    b = credit4(grade)
+    grade = input("enter Cyber Security: credit 4")
+    c = credit4(grade)
+    grade = input("enter Distributed System: credit 3")
+    d = credit3(grade)
+    grade = input("enter Natural Language Processing: credit 3")
+    r = credit3(grade)
+    grade = input("enter Deep Learning lab grade : credit 2")
+    e = credit2(grade)
+    grade = input("enter Cyber Security lab grade: credit 2")
+    f = credit2(grade)
+    grade = input("enter Free elective 2: credit 3")
+    g = credit3(grade)
+
+    print("gpa of sem 7")
+    cre = 4 + 4 + 4 + 3 + 3 + 2 + 2 + 3
+    sub = a + b + c + d + e + f + g + r
+    gpa7 = sub / cre
+    print(gpa7)
+    s = input("enter cgpa needed y/n")
+    if s == "y":
+        a1 = calsem1()
+        a2 = calsem2()
+        a3 = calsem3()
+        a4 = calsem4()
+        a5 = calsem5()
+        a6 = calsem6()
+        cgpa = (a1 + a2 + a3 + a4 + a5 + a6 + gpa7+0.1) / 7
+        print("cgpa:",cgpa)
+   
+    return gpa7
+
+def calsem8():
+    grade = input("enter Capstone Project: credit 10")
+    a = credit4(grade)  
+    grade = input("enter Internship: credit 4")
+    b = credit4(grade)
+    grade = input("enter Free elective 3: credit 3")
+    c = credit3(grade)
+
+    print("gpa of sem 8")
+    cre = 10 + 4 + 3
+    sub = a + b + c
+    gpa8 = sub / cre
+    print(gpa8)
+    s = input("enter cgpa needed y/n")
+    if s == "y":
+        a1 = calsem1()
+        a2 = calsem2()
+        a3 = calsem3()
+        a4 = calsem4()
+        a5 = calsem5()
+        a6 = calsem6()
+        a7 = calsem7()
+        cgpa = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + gpa8) / 8
+    else:
+        cgpa = gpa8
+    print("cgpa:", cgpa)
+    return gpa8
+
+while True:
+        print("\nMenu")
+        print("1. Calculate GPA for Semester 1")
+        print("2. Calculate GPA for Semester 2")
+        print("3. Calculate GPA for Semester 3")
+        print("4. Calculate GPA for Semester 4")
+        print("5. Calculate GPA for Semester 5")
+        print("6. Calculate GPA for Semester 6")
+        print("7. Calculate GPA for Semester 7")
+        print("8. Calculate GPA for Semester 8")
+        print("9. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            calsem1()
+        elif choice == '2':
+            calsem2()
+        elif choice == '3':
+            calsem3()
+        elif choice == '4':
+            calsem4()
+        elif choice == '5':
+            calsem5()
+        elif choice == '6':
+            calsem6()
+        elif choice == '7':
+            calsem7()
+        elif choice == '8':
+            calsem8()
+        elif choice == '9':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice, please try again.")
+
